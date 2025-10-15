@@ -65,7 +65,7 @@ export default function Step13_VSLPlayer({ formData }: Step13Props) {
 
 
   const handlePurchase = () => {
-    window.location.href = 'https://pay.hotmart.com/U102400458G?checkoutMode=10&bid=1760498781270';
+    window.location.href = 'https://pay.hotmart.com/W102436382L?checkoutMode=10';
   };
 
   return (
@@ -78,7 +78,7 @@ export default function Step13_VSLPlayer({ formData }: Step13Props) {
         <div ref={videoContainerRef} className="aspect-video w-full relative bg-black rounded-lg flex items-center justify-center">
             {!isClient && <div className="text-white">Chargement du lecteur...</div>}
         </div>
-
+        
         {showButton && (
           <div className='text-center pt-4 animate-fade-in'>
             <Button
